@@ -1,0 +1,36 @@
+.box{
+    position: relative;
+    display: inline-block;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.box .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    top: 40%;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 60%;
+    transform:translateX();
+}
+
+@keyframes messi {
+    0% {left:0vw; transform: rotate(0deg);}
+    50% {left: 70vw;transform: rotate(180deg)}
+    100% {left: 0vw;transform: rotate(360deg)}
+}
+#messi{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 450px;
+    animation: messi 10s infinite forwards linear;
+}
