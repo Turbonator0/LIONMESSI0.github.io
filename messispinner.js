@@ -6,5 +6,3 @@ messi.id="messi"
 
 
 document.body.appendChild(messi)
-
-messi.translate(0,0)
